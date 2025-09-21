@@ -31,9 +31,7 @@ The terminal operates in two main modes:
 
 ### AI Agent Execution
 ```
-[User
-Input] -> [main.py] -> [ai Command] -> [LangGraph Agent] -> [Tool Retriever
-(Milvus)] -> [LLM (Groq)] -> [Tool Executor] -> [Final Answer]
+[UserInput] -> [main.py] -> [ai Command] -> [LangGraph Agent] -> [Tool Retriever(Milvus)] -> [LLM (Groq)] -> [Tool Executor] -> [Final Answer]
 ```
 
 ## Prerequisites
@@ -124,3 +122,4 @@ python-terminal/
 *   **ModuleNotFoundError**: You are likely running `python main.py` from the wrong directory. Make sure you are in the project's root `python-terminal/` directory before executing.
 *   **Milvus Connection Errors**: Ensure your Docker daemon is running and that you have started the Milvus container with `docker-compose up -d`.
 *   **Slow Startup**: This is expected on the very first run. If it's slow on every run, it may mean the cache file (`.tool_registry.pkl`) is not being created or read correctly. Check file permissions.
+
