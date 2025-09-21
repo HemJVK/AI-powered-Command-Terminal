@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  milvus:
+    image: milvusdb/milvus:v2.4.4-latest
+    container_name: milvus_langchain
+    ports:
+      - "19530:19530" # gRPC
+      - "9091:9091"   # RESTful API
+    volumes:
+      - ./milvus_data:/milvus/data
+    environment:
+      - MILVUS_DATANAME=milvus_data
+
+networks:
+  default:
+    driver: bridge

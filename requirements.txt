@@ -1,0 +1,10 @@
+prompt_toolkit
+langchain
+langchain-groq
+langchain-community
+langchain-text-splitters
+pymilvus
+lark
+python-dotenv
+tqdm
+langgraph-bigtool

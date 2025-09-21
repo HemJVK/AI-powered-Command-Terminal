@@ -1,0 +1,16 @@
+[project]
+name = "python-terminal"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain-community>=0.3.29",
+    "langchain-groq>=0.3.8",
+    "langchain-huggingface>=0.3.1",
+    "langchain-milvus>=0.2.1",
+    "langgraph-bigtool>=0.0.3",
+    "openai>=1.108.1",
+    "psutil>=7.1.0",
+    "sentence-transformers>=5.1.0",
+]
