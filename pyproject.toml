@@ -11,6 +11,7 @@ dependencies = [
     "langchain-milvus>=0.2.1",
     "langgraph-bigtool>=0.0.3",
     "openai>=1.108.1",
+    "prompt-toolkit>=3.0.52",
     "psutil>=7.1.0",
     "sentence-transformers>=5.1.0",
 ]
